@@ -42,7 +42,7 @@ public class SMCircleColorPicker : UIControl {
     }
     
     @IBInspectable
-    var arcControlSpacing: CGFloat = 10 {
+    var arcControlSpacing: CGFloat = 7 {
         didSet {
             self.setNeedsDisplay()
         }
@@ -275,7 +275,7 @@ fileprivate class SMArcControl: UIControl {
 //            path.close()
 //
 //            // Arc Color
-            let color: UIColor = self.arcColor
+            let color: UIColor = UIColor.
 //
 //            path.lineWidth = CGFloat(lineThickness)
 //
@@ -297,7 +297,6 @@ fileprivate class SMArcControl: UIControl {
                 let pointOnCircle = CGPoint.pointOnCircle(center: center, radius: radius, angle: (CGFloat(sector) + CGFloat(1)) * angle)
                 
                 let circlePath = UIBezierPath(ovalIn: CGRect(x: pointOnCircle.x, y: (pointOnCircle.y - CGFloat(wheelHeadSize/2)), width: wheelHeadSize, height: wheelHeadSize))
-                
                 
                 color.setFill()
                 color.setStroke()
