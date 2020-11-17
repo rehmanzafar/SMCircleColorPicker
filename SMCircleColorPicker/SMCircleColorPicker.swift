@@ -42,7 +42,7 @@ public class SMCircleColorPicker : UIControl {
     }
     
     @IBInspectable
-    var arcControlSpacing: CGFloat = 30 {
+    var arcControlSpacing: CGFloat = 40 {
         didSet {
             self.setNeedsDisplay()
         }
