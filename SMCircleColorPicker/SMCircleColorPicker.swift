@@ -35,7 +35,7 @@ public class SMCircleColorPicker : UIControl {
     
     // Configurable
     @IBInspectable
-    var thicknessOfColorWheel: CGFloat = 40 {
+    var thicknessOfColorWheel: CGFloat = 20 {
         didSet {
             self.setNeedsDisplay()
         }
