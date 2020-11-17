@@ -198,7 +198,7 @@ fileprivate class SMArcControl: UIControl {
     private var arcSpacing: CGFloat = 20
     private var arcColor: UIColor = UIColor.clear
     
-    private let wheelHeadSize: CGFloat = 20.0
+    private let wheelHeadSize: CGFloat = 30.0
     private let totalSectors: Int = 360
     
     /**
