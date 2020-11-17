@@ -253,9 +253,9 @@ fileprivate class SMArcControl: UIControl {
         
         let center = CGPoint(x: self.frame.width / 2, y: self.frame.height / 2)
               
-        let radius = CGFloat(self.frame.width / 2 -  (3 * thicknessOfColorWheel))
+        let radius = CGFloat(self.frame.width / 2 -  (3 * 10))
               
-        let angle:CGFloat = CGFloat(2.0) *  (.pi) / CGFloat(totalColorSectors)
+        let angle:CGFloat = CGFloat(2.0) *  (.pi) / 360
         
         // initial thickness
         var lineThickness = 0.02
