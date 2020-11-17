@@ -245,11 +245,17 @@ fileprivate class SMArcControl: UIControl {
      */
     func addArc() {
         
+//        let center = CGPoint(x: self.frame.width / 2, y: self.frame.height / 2)
+//
+//        let radius = CGFloat(self.frame.width / 2 -  self.arcSpacing)
+//
+//        let angle:CGFloat = CGFloat(2.0) *  (.pi) / CGFloat(self.totalSectors)
+        
         let center = CGPoint(x: self.frame.width / 2, y: self.frame.height / 2)
-        
-        let radius = CGFloat(self.frame.width / 2 -  self.arcSpacing)
-        
-        let angle:CGFloat = CGFloat(2.0) *  (.pi) / CGFloat(self.totalSectors)
+              
+        let radius = CGFloat(self.frame.width / 2 -  (3 * thicknessOfColorWheel))
+              
+        let angle:CGFloat = CGFloat(2.0) *  (.pi) / CGFloat(totalColorSectors)
         
         // initial thickness
         var lineThickness = 0.02
