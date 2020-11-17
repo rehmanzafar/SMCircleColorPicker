@@ -128,7 +128,7 @@ public class SMCircleColorPicker : UIControl {
         for sector in 0..<totalColorSectors {
             
             let path = UIBezierPath(arcCenter: center, radius: radius, startAngle: CGFloat(sector) * angle, endAngle: (CGFloat(sector) + CGFloat(1)) * angle, clockwise: true)
-            path.lineWidth = 30
+            path.lineWidth = 40
             path.close()
             
             let color = SMCircleColorPicker.colorOnSector(sector: sector,totalSectors: totalColorSectors)
