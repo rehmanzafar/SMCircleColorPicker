@@ -301,7 +301,7 @@ fileprivate class SMArcControl: UIControl {
                 color.setFill()
                 color.setStroke()
                 
-                circlePath.lineThickness = 2.0
+                circlePath.lineWidth = 2.0
                 //circlePath.fill()
                 circlePath.stroke()
             }
