@@ -264,25 +264,25 @@ fileprivate class SMArcControl: UIControl {
         for sector in sectorRange {
             
             // Create Bezierpath in the from the center of the view and calculated radius along with start and end angle based on the configured start-end angle
-            let path = UIBezierPath(arcCenter: center, radius: radius, startAngle: CGFloat(sector) * angle, endAngle: (CGFloat(sector) + CGFloat(1)) * angle, clockwise: true)
-            
-            path.close()
-            
-            // Arc Color
-            let color: UIColor = self.arcColor
-            
-            path.lineWidth = CGFloat(lineThickness)
-            
-            if lineThickness <= maxThickness {
-                // If the line thickness is not reached the maximum thicness value then increase the thickness by ticknessToIncrease value
-                lineThickness += ticknessToIncrease
-            }
-            
-            color.setFill()
-            color.setStroke()
-            
-            path.fill()
-            path.stroke()
+//            let path = UIBezierPath(arcCenter: center, radius: radius, startAngle: CGFloat(sector) * angle, endAngle: (CGFloat(sector) + CGFloat(1)) * angle, clockwise: true)
+//
+//            path.close()
+//
+//            // Arc Color
+//            let color: UIColor = self.arcColor
+//
+//            path.lineWidth = CGFloat(lineThickness)
+//
+//            if lineThickness <= maxThickness {
+//                // If the line thickness is not reached the maximum thicness value then increase the thickness by ticknessToIncrease value
+//                lineThickness += ticknessToIncrease
+//            }
+//
+//            color.setFill()
+//            color.setStroke()
+//
+//            path.fill()
+//            path.stroke()
             
             // Once reach the end of the arc line we need to draw a circle at the tail of the arc. which will act as a head of the color picker wheel
             if sector == endAngle {
