@@ -302,7 +302,7 @@ fileprivate class SMArcControl: UIControl {
                 color.setStroke()
                 
                 //circlePath.fill()
-                //circlePath.stroke()
+                circlePath.stroke()
             }
         }
     }
