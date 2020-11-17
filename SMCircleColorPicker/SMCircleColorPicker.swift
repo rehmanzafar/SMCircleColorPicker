@@ -151,8 +151,8 @@ public class SMCircleColorPicker : UIControl {
         
         // Increase size of the outer view by the border width (Arc color wheel control)
         var wheelRect = self.frame
-        wheelRect.size.width = wheelRect.size.width + arcControlSpacing
-        wheelRect.size.height = wheelRect.size.height + arcControlSpacing
+        wheelRect.size.width = wheelRect.size.width - arcControlSpacing
+        wheelRect.size.height = wheelRect.size.height - arcControlSpacing
         
         arcControl = SMArcControl.init(frame: wheelRect, startAngle: self.arcStartAngle, endAngle:  self.arcEndAngle, arcSpacing: self.arcControlSpacing, arcColor: self.arcColor)
         // Arc should have the same center position of the color wheel
