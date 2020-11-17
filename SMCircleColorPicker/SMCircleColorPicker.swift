@@ -269,7 +269,7 @@ fileprivate class SMArcControl: UIControl {
 //            path.close()
 //
 //            // Arc Color
-//            let color: UIColor = self.arcColor
+            let color: UIColor = self.arcColor
 //
 //            path.lineWidth = CGFloat(lineThickness)
 //
