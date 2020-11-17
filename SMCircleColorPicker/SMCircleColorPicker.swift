@@ -195,7 +195,7 @@ fileprivate class SMArcControl: UIControl {
     
     private var startAngle: Int = 90
     private var endAngle: Int = 270
-    private var arcSpacing: CGFloat = 20
+    private var arcSpacing: CGFloat = 0
     private var arcColor: UIColor = .black
     
     private let wheelHeadSize: CGFloat = 20.0
